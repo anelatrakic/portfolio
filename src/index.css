@@ -11,3 +11,21 @@ body {
   font-optical-sizing: auto;
   padding-top: 100px;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  word-break: normal;
+  overflow-wrap: anywhere;
+  -webkit-text-size-adjust: 100%;
+}

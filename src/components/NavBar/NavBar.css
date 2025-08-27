@@ -1,25 +1,17 @@
-/* .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px 20px 20px 20px;
-  padding: 0 20px;
-} */
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0; /* remove bottom margin so it doesn’t shift */
+  margin: 0;
   padding: 0 20px;
-  position: fixed; /* keeps it fixed in place */
-  top: 0; /* pin to the top */
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   background: #fffdfa;
-  height: 80px; /* set a consistent height */
-  z-index: 1000; /* keeps it above everything else */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional: adds subtle shadow */
+  height: 100px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {

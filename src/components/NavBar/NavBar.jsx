@@ -28,7 +28,7 @@ const NavBar = () => {
             alt=""
             className={`nav-underline ${menu === "home" ? "active" : ""}`}
           />
-          <AnchorLink className="anchor-link" href="#home" offset={100}>
+          <AnchorLink className="anchor-link" href="#home" offset={80}>
             <p onClick={() => setMenu("home")}>HOME</p>
           </AnchorLink>
         </li>
@@ -38,7 +38,7 @@ const NavBar = () => {
             alt=""
             className={`nav-underline ${menu === "about" ? "active" : ""}`}
           />
-          <AnchorLink className="anchor-link" offset={100} href="#about">
+          <AnchorLink className="anchor-link" offset={80} href="#about">
             <p onClick={() => setMenu("about")}>ABOUT ME</p>
           </AnchorLink>
         </li>
@@ -48,7 +48,7 @@ const NavBar = () => {
             alt=""
             className={`nav-underline ${menu === "experience" ? "active" : ""}`}
           />
-          <AnchorLink className="anchor-link" offset={100} href="#experience">
+          <AnchorLink className="anchor-link" offset={80} href="#experience">
             <p onClick={() => setMenu("experience")}>EXPERIENCE</p>
           </AnchorLink>
         </li>
@@ -58,7 +58,7 @@ const NavBar = () => {
             alt=""
             className={`nav-underline ${menu === "projects" ? "active" : ""}`}
           />
-          <AnchorLink className="anchor-link" offset={100} href="#projects">
+          <AnchorLink className="anchor-link" offset={80} href="#projects">
             <p onClick={() => setMenu("projects")}>PROJECTS</p>
           </AnchorLink>
         </li>
@@ -68,7 +68,7 @@ const NavBar = () => {
             alt=""
             className={`nav-underline ${menu === "contact" ? "active" : ""}`}
           />
-          <AnchorLink className="anchor-link" offset={100} href="#contact">
+          <AnchorLink className="anchor-link" offset={80} href="#contact">
             <p onClick={() => setMenu("contact")}>CONTACT</p>
           </AnchorLink>
         </li>

@@ -8,7 +8,7 @@ const Contact = () => {
   const [isSuccess, setIsSuccess] = React.useState(false);
 
   // Development mode - set to false for production
-  const isDevelopment = false; 
+  const isDevelopment = false;
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -95,22 +95,25 @@ const Contact = () => {
             value="6f8bdc3e-802f-45e1-ab3d-697f53e87442"
           />
 
-          <label htmlFor="">Your Name</label>
+          <label htmlFor="name">Your Name</label>
           <input
+            id="name"
             type="text"
             placeholder="Enter your name"
             name="name"
             required
           />
-          <label htmlFor="">Your Email</label>
+          <label htmlFor="email">Your Email</label>
           <input
+            id="email"
             type="email"
             placeholder="Enter your email"
             name="email"
             required
           />
-          <label htmlFor="">Write your message here</label>
+          <label htmlFor="message">Write your message here</label>
           <textarea
+            id="message"
             name="message"
             rows="8"
             placeholder="Enter your message"
