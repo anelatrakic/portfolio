@@ -1,0 +1,143 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 10%;
+}
+
+.experience-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.experience-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: -58px;
+}
+
+.experience-title img {
+  display: block;
+  width: 95%;
+  max-width: 500px;
+  height: auto;
+  z-index: -1;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.experience-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-format::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #f1d14e;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.experience-format:hover::before {
+  transform: scaleX(1);
+}
+
+.experience-format h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.experience-format h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.experience-format p {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+  white-space: pre-line;
+}
+
+.experience-format:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(255, 188, 5, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #d1d5db;
+}
+
+@media (max-width: 1014px) {
+  .experience {
+    align-items: start;
+    margin: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .experience-title h1 {
+    font-size: 65px;
+    margin-bottom: -50px;
+  }
+
+  .experience-format {
+    padding: 24px;
+    gap: 12px;
+  }
+
+  .experience-format h3 {
+    font-size: 18px;
+  }
+
+  .experience-format h2 {
+    font-size: 14px;
+  }
+
+  .experience-format p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

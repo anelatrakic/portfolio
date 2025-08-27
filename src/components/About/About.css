@@ -1,0 +1,244 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 10%;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.about-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: -55px;
+}
+
+.about-title img {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  z-index: -1;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  max-width: 90%;
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+}
+
+.about-para::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 20px 20px 0 0;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-skills h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #eed880, #f1d14e, #d1b75f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-category {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.tech-category-title {
+  flex: 0 0 200px;
+  text-align: left;
+}
+
+.tech-category-title h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.tech-category-title h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #f1d14e, #eed880);
+  border-radius: 2px;
+}
+
+.tech-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  justify-items: start;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ffffff, #f8f8f8);
+  border: 2px solid transparent;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  min-width: 100px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, #f1d14e, #eed880);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius: 15px 15px 0 0;
+}
+
+.tech-item:hover::before {
+  transform: scaleX(1);
+}
+
+.tech-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  filter: grayscale(20%);
+}
+
+.tech-item:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.tech-item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.tech-item:hover span {
+  color: #000;
+}
+
+@media (max-width: 1014px) {
+  .about {
+    margin: 50px 6%;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-content {
+    gap: 50px;
+  }
+
+  .about-para {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .about-title h1 {
+    font-size: 65px;
+    margin-bottom: -45px;
+  }
+
+  .about-skills h2 {
+    font-size: 28px;
+  }
+
+  .tech-category {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .tech-category-title {
+    flex: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .tech-category-title h3 {
+    font-size: 20px;
+  }
+
+  .tech-category-title h3::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .tech-item {
+    padding: 15px;
+    min-width: 70px;
+  }
+
+  .tech-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech-item span {
+    font-size: 12px;
+  }
+}
