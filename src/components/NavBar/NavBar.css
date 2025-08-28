@@ -1,3 +1,14 @@
+:root {
+  --nav-h: 100px;
+}
+#home,
+#about,
+#experience,
+#projects,
+#contact {
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+
 .navbar {
   display: flex;
   align-items: center;
