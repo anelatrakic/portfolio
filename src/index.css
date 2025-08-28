@@ -29,3 +29,21 @@ body {
   overflow-wrap: anywhere;
   -webkit-text-size-adjust: 100%;
 }
+
+h1 {
+  padding: 0px 30px;
+  font-size: 65px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: -40px;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1014px) {
+  h1 {
+    font-size: 45px;
+    margin-bottom: -30px;
+    overflow-wrap: anywhere;
+  }
+}

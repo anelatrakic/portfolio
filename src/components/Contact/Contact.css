@@ -15,17 +15,6 @@
   gap: 0px;
 }
 
-.contact-title h1 {
-  padding: 0px 30px;
-  font-size: 80px;
-  font-weight: 600;
-  margin: 0;
-  margin-bottom: -60px;
-  text-align: center;
-  line-height: 1.1;
-  overflow-wrap: anywhere;
-}
-
 .contact-title img {
   display: block;
   width: 90%;
@@ -152,7 +141,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 45px;
+  padding: 18px 25px;
   border-radius: 12px;
   width: 30%;
   font-size: 18px;
@@ -167,6 +156,8 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
+  min-width: fit-content;
 }
 
 .contact-submit::before {
@@ -222,11 +213,6 @@
   .contact {
     margin: 40px auto;
     padding-inline: 16px;
-  }
-
-  .contact-title h1 {
-    font-size: 54px;
-    margin-bottom: -36px;
   }
 
   .contact-section {
@@ -293,7 +279,7 @@
   .contact-submit {
     text-align: left;
     width: 25%;
-    font-size: 16px;
+    font-size: 12px;
     white-space: nowrap;
   }
 }

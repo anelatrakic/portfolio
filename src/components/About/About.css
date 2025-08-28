@@ -15,14 +15,6 @@
   text-align: center;
 }
 
-.about-title h1 {
-  font-size: clamp(36px, 8vw, 80px);
-  line-height: 1.05;
-  font-weight: 600;
-  margin: 0;
-  overflow-wrap: anywhere;
-}
-
 .about-title img {
   display: block;
   width: 90%;
@@ -35,7 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: clamp(32px, 6vw, 80px);
-  width: 100%;
+  width: 80%;
   margin-inline: auto;
 }
 
@@ -169,11 +161,5 @@
   }
   .tech-grid {
     justify-items: center;
-  }
-
-  .about-title h1 {
-    font-size: 54px;
-    margin-bottom: -28px;
-    overflow-wrap: anywhere;
   }
 }
