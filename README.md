@@ -5,7 +5,7 @@ It highlights my background, projects, and experiences as a software engineer.
 
 ## 🌟 Live Demo
 
-👉 [Visit my portfolio!](https://portfolio-5foispewa-anelatrakics-projects.vercel.app/)
+👉 [Visit my portfolio!](https://atrakic.vercel.app/)
 
 ## 🌷 Contact
 
