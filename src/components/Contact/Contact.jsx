@@ -7,7 +7,6 @@ const Contact = () => {
   const [result, setResult] = React.useState("");
   const [isSuccess, setIsSuccess] = React.useState(false);
 
-  // Development mode - set to false for production
   const isDevelopment = false;
 
   const onSubmit = async (event) => {
@@ -15,7 +14,6 @@ const Contact = () => {
     setResult("Sending....");
     setIsSuccess(false);
 
-    // Simulate form submission in development mode
     if (isDevelopment) {
       setTimeout(() => {
         setResult("Form Submitted Successfully (Development Mode)");
@@ -39,10 +37,7 @@ const Contact = () => {
       });
 
       if (response.ok || response.status === 301 || response.status === 302) {
-        // Success or redirect means the form was submitted
-        setResult(
-          "Form Submitted Successfully! You should receive an email confirmation."
-        );
+        setResult("Form Submitted Successfully!");
         setIsSuccess(true);
         event.target.reset();
       } else {
