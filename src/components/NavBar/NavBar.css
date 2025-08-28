@@ -107,17 +107,24 @@
     right: 30px;
     cursor: pointer;
     transition: opacity 0.2s;
+    z-index: 1002;
   }
 
   .nav-mob-close {
     display: block;
-    position: relative;
-    top: 30px;
-    left: 290px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     width: 30px;
+    height: 30px;
     cursor: pointer;
     transition: opacity 0.2s;
-    color: white;
+    color: #fff !important;
+    z-index: 1003;
+  }
+
+  .nav-mob-close svg {
+    stroke: #fff;
   }
 
   .nav-mob-open:hover,
@@ -131,12 +138,17 @@
     flex-direction: column;
     align-items: start;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
     background-color: black;
-    width: 350px;
+    width: 345px;
     height: 100%;
-    z-index: 2;
+    z-index: 1001;
     transition: right 0.5s;
+    padding-top: 20px;
+    overflow: visible;
   }
 
   .nav-menu li {
@@ -156,11 +168,7 @@
     color: white;
   }
 
-  .nav-indicator {
-    width: 6px;
-    height: 30px;
-  }
-
+  .nav-indicator,
   .nav-indicator-placeholder {
     width: 6px;
     height: 30px;

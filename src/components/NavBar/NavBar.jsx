@@ -21,7 +21,15 @@ const NavBar = () => {
       <img src={logo} alt="" className="logo" />
       <Menu onClick={openMenu} className="nav-mob-open" size={30} />
       <ul ref={menuRef} className="nav-menu">
-        <X onClick={closeMenu} className="nav-mob-close" size={30} />
+        <X
+          onClick={closeMenu}
+          className="nav-mob-close"
+          size={30}
+          color="#ffffff"
+          strokeWidth={2}
+          aria-label="Close menu"
+          role="button"
+        />
         <li className="nav-item">
           <img
             src={underline}
